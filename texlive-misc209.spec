@@ -1,5 +1,11 @@
+# revision 18001
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-misc209
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive misc209 package
 Group:		Publishing
@@ -38,6 +44,7 @@ TeXLive misc209 package.
 %{_texmfdistdir}/tex/latex/misc209/multind.sty
 %{_texmfdistdir}/tex/latex/misc209/portland.sty
 %{_texmfdistdir}/tex/latex/misc209/psboxit.sty
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ TeXLive misc209 package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
