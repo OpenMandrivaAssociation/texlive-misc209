@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-misc209
 Version:	20111103
-Release:	9
+Release:	10
 Summary:	TeXLive misc209 package
 Group:		Publishing
 URL:		http://tug.org/texlive
